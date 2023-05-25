@@ -67,7 +67,7 @@ fn fibonacci_number_loop(index: u32) -> u64 {
     // For zero current = -1 and next = 1 so fib_num = 0
     // after that current = 1 and next = 0
     if index == 0 {
-        return 0
+        return 0;
     }
     // continue from there using a loop
     let (mut current, mut next, mut fib_num) = (1, 0, 0);
