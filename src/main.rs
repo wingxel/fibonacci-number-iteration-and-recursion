@@ -49,6 +49,13 @@ fn get_u_int() -> u32 {
     }
 }
 
+#[test]
+fn test_fibonacci_number_recursion() {
+    assert_eq!(fibonacci_number_recursion(7), 13);
+    assert_eq!(fibonacci_number_recursion(17), 1597);
+    assert_eq!(fibonacci_number_recursion(23), 28657);
+}
+
 // Using recursion to get the nth fibonacci number
 fn fibonacci_number_recursion(index: u32) -> u64 {
     if index == 0 {
@@ -58,6 +65,13 @@ fn fibonacci_number_recursion(index: u32) -> u64 {
     } else {
         fibonacci_number_recursion(index - 1) + fibonacci_number_recursion(index - 2)
     }
+}
+
+#[test]
+fn text_fibonacci_number_loop() {
+    assert_eq!(fibonacci_number_loop(7), 13);
+    assert_eq!(fibonacci_number_loop(17), 1597);
+    assert_eq!(fibonacci_number_loop(23), 28657);
 }
 
 // Using iteration to get the nth fibonacci number
